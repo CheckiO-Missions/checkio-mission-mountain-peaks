@@ -10,27 +10,47 @@ Each test is a dict with
 
 TESTS = {
     "Basics": [
-        {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
-        },
-        {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        },
+    {
+        "input": [[2, 3, 5, 6, 7, 5, 4, 2]],
+        "answer": False,
+    },
+    {
+        "input": [[2, 3, 6, 5, 4, 6, 3, 2]],
+        "answer": True,
+    },    
+    {
+        "input": [[1, 2, 3, 2, 1]],
+        "answer": False,
+    },
+    {
+        "input": [[1, 3, 2, 1, 2, 3, 1]],
+        "answer": True,
+    },
+    {
+        "input": [[4, 5, 6, 7, 8, 9, 10]],
+        "answer": False,
+    }
     ],
     "Extra": [
-        {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
-        },
-        {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        },
+    {
+        "input": [[2, 1, 3, 1, 2]],
+        "answer": True,
+    },
+    {
+        "input": [[4, 5, 6, 7, 8, 9, 10]],
+        "answer": False,
+    },
+    {
+        "input": [[4]],
+        "answer": False,
+    },
+    {
+        "input": [[]],
+        "answer": False,
+    },
+    {
+        "input": [[4, 5]],
+        "answer": False,
+    },
     ]
 }

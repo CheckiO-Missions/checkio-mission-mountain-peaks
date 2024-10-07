@@ -1,20 +1,25 @@
 <!-- Describe task in general -->
 
-<p>
-    Sum two passed ints  
+<p style="text-align: justify;">
+    A computerized geographic information system represents the profile of a mountain through a sequence of integers, where no two consecutive numbers are the same. 
+    A peak is detected as three consecutive numbers where the middle number is smaller than the other two or two consecutive numbers at left/right end of a sequence where the left/rightmost number is bigger.
 </p>
 
 <p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    <img  title="example" src="{{MEDIA}}check-peaks.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Your program must analyze this sequence to determine whether the mountain represented has more than one peak (return <code>{% if is_js %}t{% else %}T{% endif %}rue</code>), or just a single peak (return <code>{% if is_js %}f{% else %}F{% endif %}alse</code>). 
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two arguments. Both are ints.
+    <strong>Input:</strong> <span translate="repeat">{% if is_js %}Array{% else %}List{% endif %}</span> of integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Output:</strong> Int. 
+    <strong>Output:</strong> Logical value <span translate="no">(bool{% if is_js %}ean{% endif %})</span>. 
 </p>
 
 
@@ -26,17 +31,17 @@
 
 <!-- Here you can explain how it can be used in development -->
 <!-- The section is optional -->
-<p class="for_info_only">
+<!-- <p class="for_info_only">
 
     <strong>How it’s used:</strong>
     <i>(math is used everywhere)</i>
-</p>
+</p> -->
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
-<p>
+<!-- <p>
     <strong>Preconditions:</strong>
     <ul>
     <li><i>both given ints should be between -1000 and 1000</i></li>
     </ul>
-</p>
+</p> -->
