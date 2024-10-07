@@ -29,7 +29,11 @@ TESTS = {
     {
         "input": [[4, 5, 6, 7, 8, 9, 10]],
         "answer": False,
-    }
+    },
+    {
+        "input": [[2, 1, 2]],
+        "answer": True,
+    },    
     ],
     "Extra": [
     {
