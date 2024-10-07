@@ -1,0 +1,47 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Комп'ютерна геоінформаційна система представляє профіль гори у вигляді послідовності цілих чисел, де немає двох однакових чисел підряд. 
+    Вершина визначається трьома послідовними числами, де середнє число менше двох інших, або двома послідовними числами в лівому/правому кінці послідовності, де крайнє ліве/праве число є більшим.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}check-peaks.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<p style="text-align: justify;">
+    Ваша програма повинна проаналізувати цю послідовність і визначити, чи має зображена гора більше однієї вершини (повернути <code>{% if is_js %}t{% else %}T{% endif %}rue</code>), або лише одну вершину (return <code>{% if is_js %}f{% else %}F{% endif %}alse</code>). 
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вивести:</strong> Логічне значення <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
