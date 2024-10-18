@@ -10,12 +10,12 @@
 </p>
 
 <p style="text-align: justify;">
-    Państwa program musi przeanalizować tę sekwencję, aby określić, czy reprezentowana góra ma więcej niż jeden szczyt (return <code>{% if is_js %}t{% else %}T{% endif %}rue</code>), czy tylko jeden szczyt (return <code>{% if is_js %}f{% else %}F{% endif %}alse</code>). 
+    Państwa program musi przeanalizować tę sekwencję, aby określić, czy reprezentowana góra ma więcej niż jeden szczyt (powrót <code>{% if is_js %}t{% else %}T{% endif %}rue</code>). Jeśli nie ma wystarczającej ilości danych lub jest tylko jeden szczyt - proszę zwrócić <code>{% if is_js %}f{% else %}F{% endif %}alse</code>. 
 </p>
 
 <!-- Explain input and output values -->
 <p>
-   <strong>Dane wejściowe:</strong> {% if is_js %}Tablica{% else %}Lista{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+   <strong>Wejście:</strong> {% if is_js %}Array{% else %}List{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
